@@ -16,11 +16,14 @@ namespace Tickets_Management_App
         private readonly DatabaseHelper _dbHelper = new DatabaseHelper();
         private readonly int _userID;
         private readonly string _roleName;
+
         public TicketsForm(int userID, string roleName)
         {
             InitializeComponent();
             _userID = userID;
             _roleName = roleName;
+
+            btnAddTicket.Visible = _roleName == "Client";
         }
 
         private void TicketsForm_Load(object sender, EventArgs e)
@@ -116,6 +119,20 @@ namespace Tickets_Management_App
             if (e.KeyChar == (char)Keys.Enter)
             {
                 SearchTickets();
+            }
+        }
+
+        private void dgvTickets_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                if (dgvTickets.SelectedRows.Count > 0)
+                {
+                    int ticketId = Convert.ToInt32(dgvTickets.SelectedRows[0].Cells["TicketID"].Value);
+                    DetailsForm detailsForm = new DetailsForm(ticketId, _userID, _roleName);
+                    detailsForm.ShowDialog();
+                    LoadTickets();
+                }
             }
         }
     }

@@ -30,9 +30,9 @@
         {
             this.dgvTickets = new System.Windows.Forms.DataGridView();
             this.pnlTop = new System.Windows.Forms.Panel();
-            this.btnAddTicket = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnAddTicket = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTickets)).BeginInit();
             this.pnlTop.SuspendLayout();
             this.SuspendLayout();
@@ -48,6 +48,7 @@
             this.dgvTickets.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTickets.Size = new System.Drawing.Size(800, 400);
             this.dgvTickets.TabIndex = 0;
+            this.dgvTickets.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTickets_CellDoubleClick);
             // 
             // pnlTop
             // 
@@ -60,24 +61,6 @@
             this.pnlTop.Size = new System.Drawing.Size(800, 50);
             this.pnlTop.TabIndex = 1;
             // 
-            // btnAddTicket
-            // 
-            this.btnAddTicket.Location = new System.Drawing.Point(12, 12);
-            this.btnAddTicket.Name = "btnAddTicket";
-            this.btnAddTicket.Size = new System.Drawing.Size(109, 23);
-            this.btnAddTicket.TabIndex = 0;
-            this.btnAddTicket.Text = "Добавить заявку";
-            this.btnAddTicket.UseVisualStyleBackColor = true;
-            this.btnAddTicket.Click += new System.EventHandler(this.btnAddTicket_Click);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(200, 12);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(200, 20);
-            this.txtSearch.TabIndex = 1;
-            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(410, 12);
@@ -87,6 +70,24 @@
             this.button1.Text = "Поиск";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(200, 12);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(200, 20);
+            this.txtSearch.TabIndex = 1;
+            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
+            // 
+            // btnAddTicket
+            // 
+            this.btnAddTicket.Location = new System.Drawing.Point(12, 12);
+            this.btnAddTicket.Name = "btnAddTicket";
+            this.btnAddTicket.Size = new System.Drawing.Size(109, 23);
+            this.btnAddTicket.TabIndex = 0;
+            this.btnAddTicket.Text = "Добавить заявку";
+            this.btnAddTicket.UseVisualStyleBackColor = true;
+            this.btnAddTicket.Click += new System.EventHandler(this.btnAddTicket_Click);
             // 
             // TicketsForm
             // 
