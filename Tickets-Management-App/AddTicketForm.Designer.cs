@@ -123,7 +123,7 @@
             this.Controls.Add(this.lblEquipmentName);
             this.Name = "AddTicketForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddTicketForm";
+            this.Text = "Добавление заявки";
             this.ResumeLayout(false);
             this.PerformLayout();
 

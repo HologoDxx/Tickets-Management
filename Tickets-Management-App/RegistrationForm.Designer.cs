@@ -161,7 +161,8 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lblUsername);
             this.Name = "RegistrationForm";
-            this.Text = "RegistrationForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Регистрация";
             this.ResumeLayout(false);
             this.PerformLayout();
 

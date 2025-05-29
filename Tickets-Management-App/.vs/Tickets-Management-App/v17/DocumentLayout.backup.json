@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|d:\\github\\tickets-management\\tickets-management-app\\registrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|solutionrelative:registrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|d:\\github\\tickets-management\\tickets-management-app\\addticketform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|solutionrelative:addticketform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|d:\\github\\tickets-management\\tickets-management-app\\ticketsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|solutionrelative:ticketsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|d:\\github\\tickets-management\\tickets-management-app\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|d:\\github\\tickets-management\\tickets-management-app\\registrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|solutionrelative:registrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|d:\\github\\tickets-management\\tickets-management-app\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|d:\\github\\tickets-management\\tickets-management-app\\addticketform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -17,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|solutionrelative:databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|d:\\github\\tickets-management\\tickets-management-app\\ticketsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{711F1E8D-DFD4-4BDA-993D-26D78CF489FA}|Tickets-Management-App.csproj|solutionrelative:ticketsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,20 +46,70 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegistrationForm.cs",
+              "DocumentMoniker": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\RegistrationForm.cs",
+              "RelativeDocumentMoniker": "RegistrationForm.cs",
+              "ToolTip": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\RegistrationForm.cs",
+              "RelativeToolTip": "RegistrationForm.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAqwEoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T22:29:20.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RegistrationForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\RegistrationForm.cs",
+              "RelativeDocumentMoniker": "RegistrationForm.cs",
+              "ToolTip": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\RegistrationForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "RegistrationForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T22:16:32.004Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\LoginForm.cs",
+              "RelativeToolTip": "LoginForm.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAiwFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T21:26:18.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T21:22:02.853Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AddTicketForm.cs",
               "DocumentMoniker": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\AddTicketForm.cs",
               "RelativeDocumentMoniker": "AddTicketForm.cs",
               "ToolTip": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\AddTicketForm.cs",
               "RelativeToolTip": "AddTicketForm.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowDYAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-29T20:07:56.399Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "AddTicketForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\AddTicketForm.cs",
               "RelativeDocumentMoniker": "AddTicketForm.cs",
@@ -63,32 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TicketsForm.cs",
-              "DocumentMoniker": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\TicketsForm.cs",
-              "RelativeDocumentMoniker": "TicketsForm.cs",
-              "ToolTip": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\TicketsForm.cs",
-              "RelativeToolTip": "TicketsForm.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAADwv0gAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T19:23:23.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TicketsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\TicketsForm.cs",
-              "RelativeDocumentMoniker": "TicketsForm.cs",
-              "ToolTip": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\TicketsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "TicketsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T19:17:19.788Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "DatabaseHelper.cs",
               "DocumentMoniker": "D:\\GitHub\\Tickets-Management\\Tickets-Management-App\\DatabaseHelper.cs",
               "RelativeDocumentMoniker": "DatabaseHelper.cs",

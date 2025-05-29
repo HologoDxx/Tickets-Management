@@ -97,7 +97,7 @@
             this.Controls.Add(this.pnlTop);
             this.Name = "TicketsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TicketsForm";
+            this.Text = "Заявки";
             this.Load += new System.EventHandler(this.TicketsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTickets)).EndInit();
             this.pnlTop.ResumeLayout(false);

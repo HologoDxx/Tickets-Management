@@ -55,8 +55,6 @@ namespace Tickets_Management_App
 
                 if (password == passwordFromDB)
                 {
-                    MessageBox.Show("Авторизация успешна!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                     TicketsForm ticketsForm = new TicketsForm(userID, roleName);
                     ticketsForm.Show();
                     this.Hide();
