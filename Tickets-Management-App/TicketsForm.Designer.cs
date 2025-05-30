@@ -33,6 +33,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnAddTicket = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnStatistics = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTickets)).BeginInit();
             this.pnlTop.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +54,8 @@
             // 
             // pnlTop
             // 
+            this.pnlTop.Controls.Add(this.btnStatistics);
+            this.pnlTop.Controls.Add(this.btnLogout);
             this.pnlTop.Controls.Add(this.button1);
             this.pnlTop.Controls.Add(this.txtSearch);
             this.pnlTop.Controls.Add(this.btnAddTicket);
@@ -89,6 +93,26 @@
             this.btnAddTicket.UseVisualStyleBackColor = true;
             this.btnAddTicket.Click += new System.EventHandler(this.btnAddTicket_Click);
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Location = new System.Drawing.Point(600, 12);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(75, 23);
+            this.btnLogout.TabIndex = 3;
+            this.btnLogout.Text = "Выход";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnStatistics
+            // 
+            this.btnStatistics.Location = new System.Drawing.Point(490, 12);
+            this.btnStatistics.Name = "btnStatistics";
+            this.btnStatistics.Size = new System.Drawing.Size(90, 23);
+            this.btnStatistics.TabIndex = 4;
+            this.btnStatistics.Text = "Статистика";
+            this.btnStatistics.UseVisualStyleBackColor = true;
+            this.btnStatistics.Click += new System.EventHandler(this.btnStatistics_Click);
+            // 
             // TicketsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,5 +138,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnAddTicket;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnStatistics;
     }
 }

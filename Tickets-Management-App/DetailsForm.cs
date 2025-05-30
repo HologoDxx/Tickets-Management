@@ -66,8 +66,17 @@ namespace Tickets_Management_App
 
                 if (row["AssignedUserID"] != DBNull.Value)
                 {
-                    // Если есть назначенный пользователь, выбираем его
                     cmbAssignedUser.SelectedValue = Convert.ToInt32(row["AssignedUserID"]);
+                }
+
+                if (row["DateCompleted"] != DBNull.Value)
+                {
+                    dtpCompletionDate.Value = Convert.ToDateTime(row["DateCompleted"]);
+                    dtpCompletionDate.Checked = true;
+                }
+                else
+                {
+                    dtpCompletionDate.Checked = false;
                 }
             }
             catch (Exception ex)
@@ -103,6 +112,7 @@ namespace Tickets_Management_App
                 txtDescription.ReadOnly = true;
                 txtComment.Enabled = false;
                 btnAddComment.Visible = false;
+                dtpCompletionDate.Enabled = false;
             }
             else
             {
@@ -112,6 +122,7 @@ namespace Tickets_Management_App
                 txtDescription.ReadOnly = false;
                 txtComment.Enabled = true;
                 btnAddComment.Visible = true;
+                dtpCompletionDate.Enabled = true;
             }
         }
 
@@ -129,13 +140,14 @@ namespace Tickets_Management_App
 
             try
             {
-                string query = "UPDATE Tickets SET StatusName = @StatusName, AssignedUserID = @AssignedUserID, Description = @Description WHERE TicketID = @TicketID";
+                string query = "UPDATE Tickets SET StatusName = @StatusName, AssignedUserID = @AssignedUserID, Description = @Description, DateCompleted = @DateCompleted WHERE TicketID = @TicketID";
                 SqlParameter[] parameters = new SqlParameter[]
                 {
                     new SqlParameter("@TicketID", _ticketId),
                     new SqlParameter("@StatusName", newStatus),
-                    new SqlParameter("@AssignedUserID", assignedUserId ?? (object)DBNull.Value), // Если assignedUserId == null, то DBNull.Value
-                    new SqlParameter("@Description", newDescription)
+                    new SqlParameter("@AssignedUserID", assignedUserId ?? (object)DBNull.Value),
+                    new SqlParameter("@Description", newDescription),
+                     new SqlParameter("@DateCompleted", dtpCompletionDate.Checked ? (object)dtpCompletionDate.Value : DBNull.Value)
                 };
 
                 int rowsAffected = _dbHelper.ExecuteNonQuery(query, parameters);

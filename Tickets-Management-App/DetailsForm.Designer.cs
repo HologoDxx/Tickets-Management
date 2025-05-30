@@ -45,6 +45,8 @@
             this.dgvComments = new System.Windows.Forms.DataGridView();
             this.txtComment = new System.Windows.Forms.TextBox();
             this.btnAddComment = new System.Windows.Forms.Button();
+            this.lblCompletionDate = new System.Windows.Forms.Label();
+            this.dtpCompletionDate = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvComments)).BeginInit();
             this.SuspendLayout();
             // 
@@ -156,7 +158,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(150, 280);
+            this.btnSave.Location = new System.Drawing.Point(152, 294);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 12;
@@ -167,7 +169,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(250, 280);
+            this.btnClose.Location = new System.Drawing.Point(252, 294);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 13;
@@ -181,7 +183,7 @@
             this.dgvComments.AllowUserToDeleteRows = false;
             this.dgvComments.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvComments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvComments.Location = new System.Drawing.Point(10, 320);
+            this.dgvComments.Location = new System.Drawing.Point(12, 334);
             this.dgvComments.Name = "dgvComments";
             this.dgvComments.ReadOnly = true;
             this.dgvComments.Size = new System.Drawing.Size(360, 150);
@@ -189,7 +191,7 @@
             // 
             // txtComment
             // 
-            this.txtComment.Location = new System.Drawing.Point(10, 480);
+            this.txtComment.Location = new System.Drawing.Point(12, 494);
             this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
             this.txtComment.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -198,7 +200,7 @@
             // 
             // btnAddComment
             // 
-            this.btnAddComment.Location = new System.Drawing.Point(270, 480);
+            this.btnAddComment.Location = new System.Drawing.Point(272, 494);
             this.btnAddComment.Name = "btnAddComment";
             this.btnAddComment.Size = new System.Drawing.Size(100, 40);
             this.btnAddComment.TabIndex = 16;
@@ -206,11 +208,31 @@
             this.btnAddComment.UseVisualStyleBackColor = true;
             this.btnAddComment.Click += new System.EventHandler(this.btnAddComment_Click);
             // 
+            // lblCompletionDate
+            // 
+            this.lblCompletionDate.AutoSize = true;
+            this.lblCompletionDate.Location = new System.Drawing.Point(10, 270);
+            this.lblCompletionDate.Name = "lblCompletionDate";
+            this.lblCompletionDate.Size = new System.Drawing.Size(101, 13);
+            this.lblCompletionDate.TabIndex = 17;
+            this.lblCompletionDate.Text = "Дата завершения:";
+            // 
+            // dtpCompletionDate
+            // 
+            this.dtpCompletionDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpCompletionDate.Location = new System.Drawing.Point(150, 264);
+            this.dtpCompletionDate.Name = "dtpCompletionDate";
+            this.dtpCompletionDate.ShowCheckBox = true;
+            this.dtpCompletionDate.Size = new System.Drawing.Size(200, 20);
+            this.dtpCompletionDate.TabIndex = 18;
+            // 
             // DetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 533);
+            this.ClientSize = new System.Drawing.Size(379, 547);
+            this.Controls.Add(this.dtpCompletionDate);
+            this.Controls.Add(this.lblCompletionDate);
             this.Controls.Add(this.btnAddComment);
             this.Controls.Add(this.txtComment);
             this.Controls.Add(this.dgvComments);
@@ -257,5 +279,7 @@
         private System.Windows.Forms.DataGridView dgvComments;
         private System.Windows.Forms.TextBox txtComment;
         private System.Windows.Forms.Button btnAddComment;
+        private System.Windows.Forms.Label lblCompletionDate;
+        private System.Windows.Forms.DateTimePicker dtpCompletionDate;
     }
 }

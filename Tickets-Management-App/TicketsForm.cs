@@ -24,6 +24,7 @@ namespace Tickets_Management_App
             _roleName = roleName;
 
             btnAddTicket.Visible = _roleName == "Client";
+            btnStatistics.Visible = _roleName == "Admin" || _roleName == "Executor";
         }
 
         private void TicketsForm_Load(object sender, EventArgs e)
@@ -40,7 +41,16 @@ namespace Tickets_Management_App
 
                 if (_roleName == "Client")
                 {
-                    query = "SELECT * FROM Tickets WHERE ClientID = @ClientID";
+                    query = @"
+                        SELECT
+                            TicketID,
+                            DateCreated AS 'Дата создания',
+                            EquipmentName AS 'Название оборудования',
+                            FaultTypeName AS 'Тип неисправности',
+                            Description AS 'Описание проблемы',
+                            StatusName AS 'Статус'
+                        FROM Tickets
+                        WHERE ClientID = @ClientID";
                     parameters = new SqlParameter[] { new SqlParameter("@ClientID", _userID) };
                 }
                 else
@@ -134,6 +144,19 @@ namespace Tickets_Management_App
                     LoadTickets();
                 }
             }
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Close();
+        }
+
+        private void btnStatistics_Click(object sender, EventArgs e)
+        {
+            StatisticsForm statisticsForm = new StatisticsForm();
+            statisticsForm.ShowDialog();
         }
     }
 }

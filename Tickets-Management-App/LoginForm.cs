@@ -56,9 +56,8 @@ namespace Tickets_Management_App
                 if (password == passwordFromDB)
                 {
                     TicketsForm ticketsForm = new TicketsForm(userID, roleName);
+                    ticketsForm.Show();
                     this.Hide();
-                    ticketsForm.ShowDialog();
-                    this.Close();
                 }
                 else
                 {

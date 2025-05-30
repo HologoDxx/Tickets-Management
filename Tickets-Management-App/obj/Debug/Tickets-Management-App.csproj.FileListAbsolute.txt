@@ -100,3 +100,4 @@ D:\GitHub\Tickets-Management\Tickets-Management-App\obj\Debug\Tickets_Management
 D:\GitHub\Tickets-Management\Tickets-Management-App\obj\Debug\Tickets_Management_App.LoginForm.resources
 D:\GitHub\Tickets-Management\Tickets-Management-App\obj\Debug\Tickets_Management_App.RegistrationForm.resources
 D:\GitHub\Tickets-Management\Tickets-Management-App\obj\Debug\Tickets_Management_App.DetailsForm.resources
+D:\GitHub\Tickets-Management\Tickets-Management-App\obj\Debug\Tickets_Management_App.StatisticsForm.resources
