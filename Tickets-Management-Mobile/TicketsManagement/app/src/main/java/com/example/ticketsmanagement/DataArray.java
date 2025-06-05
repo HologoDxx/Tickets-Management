@@ -5,7 +5,6 @@ import java.util.List;
 
 public class DataArray {
 
-    // Класс для пользователя
     public static class User {
         public int Id;
         public String Login;
@@ -27,7 +26,6 @@ public class DataArray {
         }
     }
 
-    // Класс для заявки
     public static class Ticket {
         public int Id;
         public String CreationDate;
@@ -65,17 +63,14 @@ public class DataArray {
     }
 
 
-    // Массивы данных (замените на ваши данные)
     public static List<User> Users = new ArrayList<>();
     public static List<Ticket> Tickets = new ArrayList<>();
 
     static {
-        // Пример заполнения пользователей
         Users.add(new User(1, "HologoDxx", "123321"));
         Users.add(new User(2, "Eugene", "123"));
 
 
-        // Пример заполнения заявок
         Tickets.add(new Ticket(1, "2025-05-30", "Блок питания", "Сгорел", "Мой блок питания сгорел когда я попытался включить мой компьютер.", 1, "Выполнено", "2025-06-02"));
         Tickets.add(new Ticket(2, "2025-05-30", "Процессор", "Сильно греется", "Мой процессор сильно греется, даже когда нагрузки почти нет.", 2, "Выполнено", "2025-06-01"));
         Tickets.add(new Ticket(3, "2025-06-01", "Видеокарта", "Сильно греется", "Моя видеокарта перегревается.", 2, "В ожидании", "2025-06-02"));

@@ -32,30 +32,26 @@ public class MainActivity extends AppCompatActivity {
                 String login = editTextLogin.getText().toString();
                 String password = editTextPassword.getText().toString();
 
-                // Аутентификация
                 int userId = authenticateUser(login, password);
 
                 if (userId != -1) {
-                    // Успешная авторизация
                     textViewError.setVisibility(View.GONE);
                     Intent intent = new Intent(MainActivity.this, ticket_list.class);
-                    intent.putExtra("userId", userId); // Передаем ID пользователя
+                    intent.putExtra("userId", userId);
                     startActivity(intent);
                 } else {
-                    // Ошибка авторизации
                     textViewError.setVisibility(View.VISIBLE);
                 }
             }
         });
     }
 
-    // Метод для аутентификации пользователя
     private int authenticateUser(String login, String password) {
         for (DataArray.User user : DataArray.Users) {
             if (user.Login.equals(login) && user.Password.equals(password)) {
-                return user.Id; // Возвращаем ID пользователя
+                return user.Id;
             }
         }
-        return -1; // Если не найден, возвращаем -1
+        return -1;
     }
 }
